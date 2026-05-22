@@ -1,0 +1,81 @@
+/* Configuración General */
+:root {
+    --azul-oscuro: #1a2a6c;
+    --azul-claro: #1d3557;
+    --dorado: #f1c40f;
+    --blanco: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Encabezado y Navegación */
+header {
+    background: var(--azul-oscuro);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--dorado);
+}
+
+nav {
+    background: var(--azul-claro);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* NUEVO: Quita los puntos y limpia los márgenes de la lista */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* NUEVO: Hace que los elementos de la lista se pongan uno al lado del otro */
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Modificado: Quitamos el margin viejo para que use el del li */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilos de Tablas, Videos y Formularios */
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th { background: var(--azul-oscuro); color: white; padding: 12px; }
+td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+
+video, audio, iframe { width: 100%; border-radius: 8px; margin-top: 15px; }
+
+form { display: flex; flex-direction: column; gap: 10px; }
+input, select, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { background: var(--azul-oscuro); color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background: var(--dorado); color: #333; }
+
+footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 30px; }
