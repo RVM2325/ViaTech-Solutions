@@ -1,81 +1,161 @@
-/* Configuración General */
-:root {
-    --azul-oscuro: #1a2a6c;
-    --azul-claro: #1d3557;
-    --dorado: #f1c40f;
-    --blanco: #f8f9fa;
-}
-
+/* ==========================================================================
+   ESTILOS GENERALES - VIATECH 2026
+   ========================================================================== */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Encabezado y Navegación */
+/* Cabecera delgada y estilizada */
 header {
-    background: var(--azul-oscuro);
-    color: white;
-    padding: 20px;
+    background-color: #005088;
+    color: #fff;
+    padding: 5px 20px;
     text-align: center;
-    border-bottom: 5px solid var(--dorado);
+}
+header h1 {
+    margin: 5px 0;
+    font-size: 24px;
+}
+header p {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
+/* Barra de navegación */
 nav {
-    background: var(--azul-claro);
+    background: #11caa0;
     padding: 10px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
-
-/* NUEVO: Quita los puntos y limpia los márgenes de la lista */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* NUEVO: Hace que los elementos de la lista se pongan uno al lado del otro */
-nav li {
-    display: inline;
-    margin: 0 15px;
-}
-
-/* Modificado: Quitamos el margin viejo para que use el del li */
 nav a {
     color: white;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    min-height: 450px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Multimedia y figuras */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 15px 0;
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Artículos (Página Servicios) */
+article {
+    margin-bottom: 30px;
+    background: #fafafa;
+    padding: 15px;
+    border-left: 5px solid #11caa0;
+}
+
+/* Tablas tradicionales (Página Precios) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #005088;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #005088;
+    color: white;
+}
+tfoot {
+    background-color: #eee;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: var(--dorado);
-}
-
-/* Contenedor Principal */
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    padding: 30px;
+/* Formularios estructurados (Página Contacto) */
+form {
+    background: #f9f9f9;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+fieldset {
+    border: 2px solid #005088;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+    color: #005088;
+    padding: 0 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #005088;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #11caa0;
 }
 
-/* Estilos de Tablas, Videos y Formularios */
-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-th { background: var(--azul-oscuro); color: white; padding: 12px; }
-td { border: 1px solid #ddd; padding: 10px; text-align: center; }
-
-video, audio, iframe { width: 100%; border-radius: 8px; margin-top: 15px; }
-
-form { display: flex; flex-direction: column; gap: 10px; }
-input, select, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
-button { background: var(--azul-oscuro); color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
-button:hover { background: var(--dorado); color: #333; }
-
-footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 30px; }
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}

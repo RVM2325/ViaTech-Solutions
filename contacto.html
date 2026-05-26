@@ -3,80 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | ViaTech Solutions</title>
+    <title>ViaTech - Contacto</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
-        <h1>ViaTech Solutions | Contacto y Ubicación</h1>
-        <p>Estamos listos para atender tus consultas tecnológicas</p>
+        <h1>ViaTech: Soluciones Tecnológicas</h1>
+        <p>Expertos en Renting y Soporte Técnico en Lima</p>
     </header>
 
-   <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="presupuesto.html">Presupuesto</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="precios.html">Precios</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 
     <main>
-        <section>
-            <h2>Solicita una asesoría gratuita</h2>
-            <p>Completa el siguiente formulario y un especialista de <strong>ViaTech</strong> se comunicará contigo.</p>
+        <h2>Formulario de Cotización Directa</h2>
+        <p>Completa tus datos para enviarte un presupuesto personalizado en minutos:</p>
 
-            <form action="#" method="get">
-                <fieldset>
-                    <legend>Información del Cliente</legend>
-                    
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Raul Via" required>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Datos Obligatorios del Cliente</legend>
+                
+                <label for="nombre">Nombre o Razón Social:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez o Empresa SAC" required>
 
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                <label for="correo">Correo de Contacto:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-                    <label for="interes">¿Qué servicio necesitas?</label>
-                    <select id="interes" name="interes">
-                        <option value="web">Desarrollo Web / App</option>
-                        <option value="soporte">Soporte de Hardware</option>
-                        <option value="logistica">Sistemas Logísticos</option>
-                        <option value="otros">Otros asuntos</option>
-                    </select>
+                <label for="telefono">Número Telefónico o WhatsApp:</label>
+                <input type="number" id="telefono" name="telefono" placeholder="999999999">
+            </fieldset>
 
-                    <label>Preferencias de contacto:</label>
-                    <div>
-                        <input type="radio" id="pref-whatsapp" name="preferencia" value="whatsapp">
-                        <label for="pref-whatsapp">WhatsApp</label>
-                        <input type="radio" id="pref-llamada" name="preferencia" value="llamada">
-                        <label for="pref-llamada">Llamada telefónica</label>
-                    </div>
+            <fieldset>
+                <legend>Requerimiento Técnico</legend>
+                
+                <label for="servicio">¿Qué tipo de solución buscas?</label>
+                <select id="servicio" name="servicio">
+                    <option value="alquiler">Alquiler / Renting de Laptops</option>
+                    <option value="soporte">Servicio de Soporte TI</option>
+                    <option value="impresoras">Alquiler de Impresoras</option>
+                </select>
 
-                    <label for="mensaje">Detalles de tu consulta:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente tu proyecto o problema técnico..."></textarea>
+                <label for="fecha">¿Cuándo necesitas iniciar el servicio?</label>
+                <input type="date" id="fecha" name="fecha">
 
-                    <button type="submit">Enviar Solicitud</button>
-                </fieldset>
-            </form>
-        </section>
+                <label for="mensaje">Especificaciones del requerimiento:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos cuántos equipos necesitas o cuál es el problema técnico..."></textarea>
+            </fieldset>
 
-        <section>
-            <h3>Nuestra Sede Central</h3>
-            <p>Visítanos en nuestra oficina en Lince, Lima, de lunes a sábado.</p>
-            <!-- Iframe de Google Maps (Ubicación referencial de Lince) -->
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.12!2d-77.036!3d-12.085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f6!2sLince!5e0!3m2!1ses!2spe!4v123456789" 
-                height="350" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </section>
+            <input type="submit" value="Enviar Formulario Corporativo">
+        </form>
     </main>
 
     <footer>
-        <p>&copy; 2026 ViaTech Solutions | Lince, Lima - Perú</p>
+        <p>&copy; 2026 ViaTech Soluciones Digitales. Todos los derechos reservados.</p>
     </footer>
 
 </body>
