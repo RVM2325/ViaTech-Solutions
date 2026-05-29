@@ -31,19 +31,19 @@ header p {
    ========================================================================== */
 nav {
     background: #11caa0;
-    padding: 10px 0;    /* Espacio arriba y abajo dentro de la barra */
-    text-align: center; /* Centra todo el contenido de la lista */
+    padding: 10px 0;    
+    text-align: center; 
 }
 
 nav ul {
-    list-style-type: none; /* Elimina por completo los puntos negros */
-    padding: 0;            /* Quita el espacio izquierdo por defecto */
-    margin: 0;             /* Resetea márgenes residuales */
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;            
 }
 
 nav li {
-    display: inline-block; /* Fuerza a los elementos a ponerse en fila horizontal */
-    margin: 0 20px;        /* Da una separación perfecta entre pestañas */
+    display: inline-block; 
+    margin: 0 20px;        
 }
 
 nav a {
