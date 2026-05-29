@@ -27,33 +27,34 @@ header p {
 }
 
 /* ==========================================================================
-   BARRA DE NAVEGACIÓN
+   BARRA DE NAVEGACIÓN (Corregida para Primer Ciclo)
    ========================================================================== */
 nav {
     background: #11caa0;
-    padding: 10px;
-    text-align: center; /* Centrar los enlaces*/
+    padding: 10px 0;    /* Espacio arriba y abajo dentro de la barra */
+    text-align: center; /* Centra todo el contenido de la lista */
 }
 
 nav ul {
-    list-style-type: none; /* Quita los puntitos negros del ul */
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Elimina por completo los puntos negros */
+    padding: 0;            /* Quita el espacio izquierdo por defecto */
+    margin: 0;             /* Resetea márgenes residuales */
 }
 
 nav li {
-    display: inline-block; /* Poner los li horizontal */
-    margin: 0 15px;        /* Separar las opciones del menú */
+    display: inline-block; /* Fuerza a los elementos a ponerse en fila horizontal */
+    margin: 0 20px;        /* Da una separación perfecta entre pestañas */
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;       
 }
 
 nav a:hover {
-    text-decoration: underline; /* Efecto del cursor */
+    text-decoration: underline; 
 }
 
 /* ==========================================================================
