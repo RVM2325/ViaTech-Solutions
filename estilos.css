@@ -1,0 +1,177 @@
+/* ==========================================================================
+   ESTILOS GENERALES - VIATECH 2026
+   ========================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Cabecera */
+header {
+    background-color: #005088;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 5px 0;
+    font-size: 24px;
+}
+header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN
+   ========================================================================== */
+nav {
+    background: #11caa0;
+    padding: 10px;
+    text-align: center; /* Centrar los enlaces*/
+}
+
+nav ul {
+    list-style-type: none; /* Quita los puntitos negros del ul */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; /* Poner los li horizontal */
+    margin: 0 15px;        /* Separar las opciones del menú */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Efecto del cursor */
+}
+
+/* ==========================================================================
+   CONTENIDO Y CUERPO DE LAS PÁGINAS
+   ========================================================================== */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    min-height: 450px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Multimedia y figuras */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 15px 0;
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Artículos de Servicios */
+article {
+    margin-bottom: 30px;
+    background: #fafafa;
+    padding: 15px;
+    border-left: 5px solid #11caa0;
+}
+
+/* Tablas tradicionales de Precios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #005088;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #005088;
+    color: white;
+}
+tfoot {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* Formularios de Contacto */
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+fieldset {
+    border: 2px solid #005088;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+    color: #005088;
+    padding: 0 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #005088;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #11caa0;
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
