@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Cabecera delgada y estilizada */
+/* Cabecera */
 header {
     background-color: #005088;
     color: #fff;
@@ -26,23 +26,39 @@ header p {
     font-size: 14px;
 }
 
-/* Barra de navegación */
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN
+   ========================================================================== */
 nav {
     background: #11caa0;
     padding: 10px;
-    text-align: center;
+    text-align: center; /* Centrar los enlaces*/
 }
+
+nav ul {
+    list-style-type: none; /* Quita los puntitos negros del ul */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; /* Poner los li horizontal */
+    margin: 0 15px;        /* Separar las opciones del menú */
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Efecto del cursor */
 }
 
-/* Contenedor principal */
+/* ==========================================================================
+   CONTENIDO Y CUERPO DE LAS PÁGINAS
+   ========================================================================== */
 main {
     padding: 20px;
     max-width: 1000px;
@@ -76,7 +92,7 @@ figcaption {
     margin-top: 5px;
 }
 
-/* Artículos (Página Servicios) */
+/* Artículos de Servicios */
 article {
     margin-bottom: 30px;
     background: #fafafa;
@@ -84,7 +100,7 @@ article {
     border-left: 5px solid #11caa0;
 }
 
-/* Tablas tradicionales (Página Precios) */
+/* Tablas tradicionales de Precios */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -106,7 +122,7 @@ tfoot {
     font-weight: bold;
 }
 
-/* Formularios estructurados (Página Contacto) */
+/* Formularios de Contacto */
 form {
     background: #f9f9f9;
     padding: 20px;
